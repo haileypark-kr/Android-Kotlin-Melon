@@ -36,6 +36,7 @@ class MelonListAdapter(
 
 				val intent = Intent(context, MelonDetailActivity::class.java)
 				intent.putParcelableArrayListExtra("melon_item_list", melonItems)
+				intent.putExtra("position", adapterPosition)
 				context.startActivity(intent)
 			}
 		}
